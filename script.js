@@ -1,6 +1,6 @@
 var boardSize = 0;
 var totalCells = 0;
-var boardContents = "";
+var boardContents;
 
 function newGame(boardSize, totalCells, boardContents) {
 	if(boardSize < 6) {
@@ -10,6 +10,7 @@ function newGame(boardSize, totalCells, boardContents) {
 		boardSize = 12;
 	}
 	totalCells = boardSize * boardSize;
+	boardContents = "";
 	for(var i = 0; i < totalCells; i++) {
 		if((i / boardSize) % 1 === 0) {
 			boardContents += "<br>";
