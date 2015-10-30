@@ -1,0 +1,18 @@
+<html>
+<head>
+  <link type="text/css" rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+  <title>Minesweeper</title>
+</head>
+<body>
+  <h1>Minesweeper
+  </h1>
+
+  <input id="sizeInput" type="number" value="8"><label>Size of Board</label>
+  <p>Board size must be between 6 and 12.</p>
+  <button onclick="newGame(document.getElementById('sizeInput').value)">New Game</button>
+
+  <div id="board"></div>
+
+</body>
+</html>
