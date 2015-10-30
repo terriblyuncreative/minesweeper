@@ -5,14 +5,27 @@
   <title>Minesweeper</title>
 </head>
 <body>
-  <h1>Minesweeper
-  </h1>
 
-  <input id="sizeInput" type="number" value="8"><label>Size of Board</label>
-  <p>Board size must be between 6 and 12.</p>
-  <button onclick="newGame(document.getElementById('sizeInput').value)">New Game</button>
+	<div class="container">
+		<h1>Minesweeper
+		</h1>
 
-  <div id="board"></div>
+		<input id="sizeInput" type="number" value="6"><label>Size of Board</label>
+	  
+		<div id="instructions1">
+			<p>Board size must be between 6 and 12.</p>
+		</div>
+
+		<button onclick="newGame(document.getElementById('sizeInput').value)">New Game</button>
+	  
+		<div id="instructions2">
+		</div>
+
+		<div id="board"></div>
+		
+		<div class="display" id="victory"></div>
+	  
+	</div>
 
 </body>
 </html>

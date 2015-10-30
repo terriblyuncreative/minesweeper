@@ -1,7 +1,104 @@
+body {
+	background-color: #808080;
+}
+
+.container {
+	width: 500px;
+	height: 600px;
+	background-color: #FFFFFF;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
 .square {
   width: 25px;
   height: 25px;
   display: inline-block;
-  background-color: grey;
-  border: 1px solid black;
+  outline: 2px solid black;
+  cursor: default;
 }
+
+.covered {
+	color: #808080;
+	background-color: #808080;
+	border-top: 1px solid #FFFFFF;
+	border-left: 1px solid #FFFFFF;
+	border-right: 1px solid #000000;
+	border-bottom: 1px solid #000000;
+}
+
+.uncovered {
+	color: #BFBFBF;
+	background-color: #BFBFBF;
+	border: 1px solid #BFBFBF;
+}
+
+.warning {
+	color: #0000FF;
+}
+
+.suspected {
+	color: #FFBABA;
+	background-color: #FFBABA;
+}
+
+.detonated {
+	color: #FF0000;
+	background-color: #FF0000;
+	border: 1px solid #FF0000;
+}
+
+.display {
+	color: #FF0000;
+}
+
+
+
+
+
+
+
+.blink {
+    -webkit-animation: blink .75s linear infinite;
+    -moz-animation: blink .75s linear infinite;
+    -ms-animation: blink .75s linear infinite;
+    -o-animation: blink .75s linear infinite;
+    animation: blink .75s linear infinite;
+}
+
+@-webkit-keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 1; }
+    50.01% { opacity: 0; }
+    100% { opacity: 0; }
+}
+
+@-moz-keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 1; }
+    50.01% { opacity: 0; }
+    100% { opacity: 0; }
+}
+
+@-ms-keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 1; }
+    50.01% { opacity: 0; }
+    100% { opacity: 0; }
+}
+
+@-o-keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 1; }
+    50.01% { opacity: 0; }
+    100% { opacity: 0; }
+}
+
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 1; }
+    50.01% { opacity: 0; }
+    100% { opacity: 0; }
+}
+
